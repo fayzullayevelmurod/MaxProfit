@@ -105,22 +105,76 @@ button {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 112.5%;
 }
+
+// wallets
+.wallets {
+    .gradient_text {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .wallets_card {
+        max-width: 940px;
+        margin: 0 auto;
+        border-radius: 30px;
+        background: #F2F2F2;
+        padding: 40px 40px 60px 40px;
+
+        h5 {
+            color: #323232;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 112.5%;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #323232;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 140%;
+            margin-bottom: 15px;
+        }
+
+        .wallets_card_in {
+            display: flex;
+            gap: 23px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                li {
+                    @include flex-start();
+                    gap: 16px;
+                    color: #323232;
+                    max-width: 450px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 140%;
+                }
+            }
+
+            .wallets_img {
+                max-width: 379px;
+            }
+        }
+    }
+}
+// wallets
 
 // message
 .message {
     padding: 115px 0 90px 0;
 
     h4 {
-        background: linear-gradient(90deg, rgba(104,57,239,1) 0%, rgba(181,71,219,1) 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
         text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 112.5%;
         margin-bottom: 40px;
     }
 
@@ -199,16 +253,8 @@ button {
         filter: blur(92.69999694824219px);
     }
 
-    h3 {
+    .gradient_text {
         text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 112.5%; /* 40.5px */
-        background: linear-gradient(90deg, rgba(104,57,239,1) 0%, rgba(181,71,219,1) 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
         margin-bottom: 30px;
     }
 
@@ -425,17 +471,6 @@ button {
             right: 0;
             margin: 0 auto;
         }
-    }
-
-    .program_title {
-        background: linear-gradient(90deg, rgba(104,57,239,1) 0%, rgba(181,71,219,1) 100%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 112.5%;
     }
 
     h6 {

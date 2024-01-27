@@ -1,10 +1,69 @@
 <template>
   <div>
 
+
+    <!-- wallets -->
+    <section class="wallets">
+      <div class="main_container">
+        <h4 class="gradient_text">
+          Анализ кошельков MaxProfit
+        </h4>
+        <div class="wallets_card">
+          <h5>
+            Анализ кошелька MaxProfit
+          </h5>
+          <p>
+            Наш продукт — это инструмент для глубокого исследования данных в блокчейне и отслеживания активности множества кошельков в различных сетях.
+          </p>
+          <p>
+            С помощью него вы можете детально анализировать транзакции любого криптовалютного кошелька с разъяснением его прибыльности, частоты успешных сделок и общей прибыли и убытков.
+          </p>
+          <div class="wallets_card_in">
+            <ul>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Анализ любого on-chain кошелька
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Удобная и подробная аналитика кошелька
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Больше 50 разных пунктов по которым происходит анализ
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Полная история покупок и продаж монет
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Сохранение анализируемого кошелька в подборку
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Уведомления о действиях сохранённых кошельков
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Исключение из отслеживания не интересующих транзакций кошелька
+              </li>
+              <li>
+                <img src="@/assets/images/icons/check_messange.svg" alt="">
+                Интеграция  с другим нашим продуктом AI поиск похожих кошельков
+              </li>
+            </ul>
+            <img class="wallets_img" src="@/assets/images/wallets1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- wallets -->
+
     <!-- message -->
     <section class="message">
       <div class="main_container">
-        <h4>
+        <h4 class="gradient_text">
           MaxProfit Message Live
         </h4>
         <div class="message_in">
@@ -66,7 +125,7 @@
     <section class="products">
       <div class="products_bg"></div>
       <div class="main_container">
-          <h3>
+          <h3 class="gradient_text">
             Как использовать продукты MaxProfit 
           </h3>
           <p>
@@ -264,7 +323,7 @@
     <section class="program">
       <div class="main_container">
         <div class="program_left">
-          <h4 class="program_title">
+          <h4 class="gradient_text">
             Партнерская программа
           </h4>
           <h6>

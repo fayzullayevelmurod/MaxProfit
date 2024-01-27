@@ -1,4 +1,11 @@
 @media only screen and (max-width: 993px) {
+
+    .gradient_text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 112.5%; 
+    }
+
     footer {
         padding: 39px 0 34px 0;
 
@@ -47,7 +54,7 @@
             max-width: 100%;
         }
 
-        .program_title {
+        .gradient_text {
             font-size: 24px;
             font-weight: 700;
             line-height: 112.5%; 
@@ -165,5 +172,9 @@
 
 
 @media only screen and (max-width: 420px) {
-
+    .program {
+        .program_img_bg {
+            width: 320px;
+        }
+    }
 }
