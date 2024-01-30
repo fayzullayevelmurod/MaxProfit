@@ -7,18 +7,18 @@
                 </router-link>
                 <div class="navs">
                     <div class="auth_link">
-                        <router-link to="#" class="register_link">Регистрация</router-link>
-                        <btn-light to="home">
+                        <a href="https://panel.maxprofit.cc/auth/register" class="register_link">{{ $t('sign up') }}</a>
+                        <btn-light to="https://panel.maxprofit.cc/auth/login">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path
                                     d="M6.00016 2.66663H12.6668V12C12.6668 12.3536 12.5264 12.6927 12.2763 12.9428C12.0263 13.1928 11.6871 13.3333 11.3335 13.3333H6.00016M8.00016 9.99996L10.0002 7.99996M10.0002 7.99996L8.00016 5.99996M10.0002 7.99996H3.3335"
                                     stroke="#743CED" stroke-width="1.3913" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <span>Вход</span>
+                            <span>{{ $t('sign in') }}</span>
                         </btn-light>
                     </div>
                     <ul class="navs_links">
-                        <li v-for="(item, i) in navs_links" :key="i">
+                        <li v-for="(item, i) in $t('navs')" :key="i">
                             <router-link to="#">{{ item }}</router-link>
                         </li>
                     </ul>
@@ -62,7 +62,7 @@
                     </button>
                 </div>
                 <ul>
-                    <li v-for="(item, i) in navs_links" :key="i">
+                    <li v-for="(item, i) in $t('navs')" :key="i">
                         <router-link to="#" class="link">{{ item }}</router-link>
                     </li>
                 </ul>
@@ -78,7 +78,6 @@ export default {
     name: "Header",
     data() {
         return {
-            navs_links: ['Scanner', 'Screener', 'Message Live', 'Message History', 'Парнерам'],
             list: [
                 {name: "Eng", flag: 'GB'},
                 {name: "Ru", flag: 'RU'}

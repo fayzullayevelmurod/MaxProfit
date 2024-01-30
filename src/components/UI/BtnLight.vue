@@ -1,7 +1,7 @@
 <template>
-    <router-link :to="to" class="btn_light">
+    <a :href="to" class="btn_light">
         <slot></slot>
-    </router-link>
+    </a>
 </template>
 
 <script>
