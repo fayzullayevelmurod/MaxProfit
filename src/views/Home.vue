@@ -110,6 +110,7 @@
             <img src="@/assets/images/icons/slide_btn.svg" alt="">
           </button>
         </div>
+        
         <div class="link_wrap">
           <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('start using') }}</a>
         </div>
