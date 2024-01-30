@@ -144,8 +144,8 @@
     "tarif slide": [
         {
             "title": "MaxProfit <br/> Silver",
-            "price": "100 $",
-            "discout": "0",
+            "price": "200 $",
+            "discout": "69$",
             "descriptions": [
                 "Поддержка 60+ СЕХ бирж",
                 "2 Telegram channel",
@@ -159,8 +159,8 @@
         },
         {
             "title": "MaxProfit <br/> Gold",
-            "price": "100 $",
-            "discout": "100%",
+            "price": "299 $",
+            "discout": "199$",
             "descriptions": [
                 "Все опции, включенные в ТЕЅT подписку",
                 "Доступ к WEB версии",
@@ -174,8 +174,8 @@
         },
         {
             "title": "MaxProfit <br/> Platinum",
-            "price": "100 $",
-            "discout": "100%",
+            "price": "599 $",
+            "discout": "399$",
             "descriptions": [
                 "Arbitrage Scanner через DEX биржи",
                 "50+ ДЕХ бирж",
@@ -189,8 +189,8 @@
         },
         {
             "title": "MaxProfit <br/> VIP",
-            "price": "100 $",
-            "discout": "100%",
+            "price": "1300 $",
+            "discout": "799$",
             "descriptions": [
                 "Все опции, включенные в Platinum ПОДПИСКУ",
                 "Access to Message EXPERT Неограничено",

@@ -4,7 +4,7 @@
         <div class="main_container">
             <h6>{{ $t('footer description') }}</h6>
             <div class="footer_btn">
-                <a href="https://t.me/maxprofit_support" class="main_btn">{{ $t('start using') }}</a>
+                <a href="https://t.me/maxprofit_support" target="_blank" class="main_btn">{{ $t('start using') }}</a>
             </div>
             <h6 v-html="$t('footer description 1')"></h6>
             <ul class="footer_social">

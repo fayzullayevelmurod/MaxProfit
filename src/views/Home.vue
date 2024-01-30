@@ -17,7 +17,7 @@
             <p>{{ $t('home description 3') }}</p>
           </li>
         </ul>
-        <btn-indigo>{{ $t('home button') }}</btn-indigo>
+        <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('home button') }}</a>
       </div>
     </section>
     <!-- Home end -->
@@ -34,7 +34,7 @@
               <span>{{ item }}</span>
             </li>
           </ul>
-          <btn-indigo class="mobile">{{ $t('start using') }}</btn-indigo>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn mobile">{{ $t('start using') }}</a>
         </div>
         <div class="statistic">
           <img src="@/assets/images/statistic.png" alt="">
@@ -48,7 +48,7 @@
               <div class="text">{{ item }}</div>
             </li>
           </ul>
-          <btn-indigo class="desktop">{{ $t('start using') }}</btn-indigo>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn desktop">{{ $t('start using') }}</a>
         </div>
       </div>
     </section>
@@ -111,7 +111,7 @@
           </button>
         </div>
         <div class="link_wrap">
-          <router-link to="#" class="main_btn">{{ $t('start using') }}</router-link>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('start using') }}</a>
         </div>
       </div>
     </section>
@@ -136,9 +136,7 @@
           </ul>
         </div>
         <div class="message_btns">
-          <button class="main_btn">
-            {{ $t('start using') }}
-          </button>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('start using') }}</a>
         </div>
       </div>
     </section>
@@ -161,7 +159,7 @@
             <img src="@/assets/images/history_right_card.png" width="300" alt="" class="card_img">
             <p>{{ $t('history description 2') }}</p>
           </div>
-          <btn-indigo>{{ $t('start using') }}</btn-indigo>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('start using') }}</a>
         </div>
       </div>
     </section>
