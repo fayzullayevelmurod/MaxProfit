@@ -1,0 +1,22 @@
+// global vars
+
+$Golos: 'Golos Text', sans-serif;
+$Poppins: 'Poppins', sans-serif;
+$Raleway: 'Raleway', sans-serif;
+
+$screens: (
+        large: 1050,
+        medium: 992,
+        small: 768,
+        exsm: 576,
+        exexsm: 420
+);
+
+@mixin media($value) {
+  $width: map_get($screens, $value);
+  @if ($width != 0) {
+    @media screen and (max-width: $width + 'px') {
+      @content
+    }
+  }
+}

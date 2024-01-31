@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import "@/assets/main.scss"
+import "@/assets/styles/main.scss"
 import components from '@/components/UI'
 import VueI18n from 'vue-i18n'
 import messages from '@/lang/index.js'

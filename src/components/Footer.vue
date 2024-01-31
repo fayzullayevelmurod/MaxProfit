@@ -46,10 +46,11 @@
 <script>
 export default {
     name: "Footer",
-
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.footer {
+  font-family: $Raleway;
+}
 </style>

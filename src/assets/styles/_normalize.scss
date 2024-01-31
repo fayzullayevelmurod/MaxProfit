@@ -1,0 +1,36 @@
+// fix default browser styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFF;
+  --grey: #323232;
+  --green-black: #242D35;
+  --footer-bg: #231A32;
+  --blue: #1E6AFF;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-family: $Raleway;
+  // overflow-x: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
