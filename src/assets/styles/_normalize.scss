@@ -5,14 +5,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --white: #FFF;
-  --grey: #323232;
-  --green-black: #242D35;
-  --footer-bg: #231A32;
-  --blue: #1E6AFF;
-}
-
 ul, ol {
   list-style-type: none;
 }
@@ -25,8 +17,7 @@ a {
 
 body {
   font-style: normal;
-  font-family: $Raleway;
-  // overflow-x: hidden;
+  font-family: $font-raleway;
 }
 
 button {

@@ -51,6 +51,6 @@ export default {
 
 <style lang="scss">
 .footer {
-  font-family: $Raleway;
+  font-family: $font-raleway;
 }
 </style>

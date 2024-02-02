@@ -7,7 +7,7 @@
                 </router-link>
                 <div class="navs">
                     <div class="auth_link">
-                        <a href="https://panel.maxprofit.cc/auth/register" class="register_link">{{ $t('sign up') }}</a>
+                        <a href="https://panel.maxprofit.cc/auth/register" aria-label="" class="register_link">{{ $t('sign up') }}</a>
                         <btn-light to="https://panel.maxprofit.cc/auth/register">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path
