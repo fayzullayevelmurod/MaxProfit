@@ -3,7 +3,7 @@
     <!-- Home -->
     <section class="home">
       <div class="main_container">
-        <img src="@/assets/images/home_bg.png" alt="" class="bg">
+        <img src="@/assets/images/home_bg.png" alt="" class="home_bg">
         <h1>{{ $t('home-main_title') }}</h1>
         <div class="media_deskription">{{ $t('home-main_descriptions')[0] }}</div>
         <img src="@/assets/images/home_card.png" height="450" class="card" alt="">
@@ -57,7 +57,7 @@
     <!-- Screener -->
     <div class="home-screener">
       <div class="main_container">
-        <img src="@/assets/images/screener_bg.png" alt="" class="bg">
+        <img src="@/assets/images/screener_bg.png" alt="" class="home-screener_bg">
         <div class="left_block">
           <h2>{{ $t('home-screener_title') }}</h2>
           <div class="description">{{ $t('home-screener_description') }}</div>
@@ -94,8 +94,8 @@
                   <h5>{{ item.title }}</h5>
                   <p v-for="(description, idx) in item.description" :key="idx">{{ description }}</p>
                   <div class="wallets_card_in">
-                    <ul>
-                      <li v-for="(description, idx) in item['description list']" :key="idx">
+                    <ul class="wallets_card_in__list">
+                      <li class="wallets_card_in__list_item" v-for="(description, idx) in item['description list']" :key="idx">
                         <img src="@/assets/images/icons/check_messange.svg" alt="">
                         {{ description }}
                       </li>
@@ -146,7 +146,7 @@
     <!-- Message history -->
     <section class="home-history">
       <div class="main_container">
-        <img src="@/assets/images/history_bg.png" alt="" class="history_bg">
+        <img src="@/assets/images/history_bg.png" alt="" class="home-history_bg">
         <div class="left_block">
           <h2 class="gradient_text">{{ $t('home-history_title') }}</h2>
           <p>{{ $t('home-history_description') }}</p>
@@ -189,7 +189,7 @@
     <!-- works -->
     <section class="home-works">
       <div class="main_container top_card">
-        <img src="@/assets/images/work_bg.png" alt="" class="bg">
+        <img src="@/assets/images/work_bg.png" alt="" class="top_card_bg">
         <div class="left_block">
           <h2 class="gradient_text">{{ $t('home-work_title') }}</h2>
           <p v-html="$t('home-work_description')"></p>
@@ -237,8 +237,8 @@
                     <del>{{ item.price }}</del>
                     <h4>{{ item.discout }}</h4>
                   </div>
-                  <ul>
-                    <li v-for="(text, idx) in item.descriptions" :key="idx">
+                  <ul class="home-tarif_card_list">
+                    <li class="home-tarif_card_list_item" v-for="(text, idx) in item.descriptions" :key="idx">
                       <img v-if="i != 3" src="@/assets/images/icons/check_blue.svg" alt="">
                       <img v-else src="@/assets/images/icons/check_green.svg" alt="">
                       <span v-html="text"></span>

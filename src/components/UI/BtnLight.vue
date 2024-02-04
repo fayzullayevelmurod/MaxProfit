@@ -32,10 +32,8 @@ export default {
         font-size: 14px;
         font-weight: 600;
         line-height: 142.5%;
-    }
 
-    @media only screen and (max-width: 768px) {
-        .btn_light {
+        @include media(small) {
             height: 30px;
             padding-top: 0;
             padding-bottom: 0;

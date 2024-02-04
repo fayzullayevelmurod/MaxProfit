@@ -100,12 +100,12 @@ export default {
             return "salom"
         },
         mobileMenuToggle () {
-            if (this.mobile_menu == 'active') {
-                this.mobile_menu = 'end_active';
-            } else if (this.mobile_menu == 'end_active') {
-                this.mobile_menu = 'active';
+            if (this.mobile_menu == 'mobile_menu_active') {
+                this.mobile_menu = 'mobile_menu_end_active';
+            } else if (this.mobile_menu == 'mobile_menu_end_active') {
+                this.mobile_menu = 'mobile_menu_active';
             } else if (this.mobile_menu == '') {
-                this.mobile_menu = 'active'
+                this.mobile_menu = 'mobile_menu_active'
             }
         }
     }

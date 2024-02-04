@@ -12,6 +12,7 @@ Vue.use(VueI18n);
 components.forEach(component => {
   Vue.component(component.name, component);
 })
+
 const i18n = new VueI18n({
   legacy: false,
   locale: 'ru',

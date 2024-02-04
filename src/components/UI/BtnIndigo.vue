@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss">
 .main_btn {
-    color: var(--white);
+    color: $color-white;
     font-size: 16px;
     font-weight: 600;
     line-height: 140%;
