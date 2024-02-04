@@ -30,128 +30,6 @@
   overflow: hidden;
 }
 
-.main {
-  &_container {
-    max-width: 1078px;
-    padding: 0 20px;
-    margin: 0 auto;
-
-    @include media(medium) {
-      // some styles here
-    }
-  }
-
-  &_title {
-    color: $color-white;
-    font-family: $font-raleway;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 112.5%;
-  }
-
-  &_btn {
-    color: $color-white;
-    font-family: $font-raleway;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: 0.32px;
-    border-radius: 90px;
-    padding: 15px 25px;
-    background: linear-gradient(90deg, #6839EF 0%, $color-indigo 109.09%), linear-gradient(115deg, #F76460 22.3%, #FFB308 96.05%), #2D6BF6;
-  }
-}
-
-.gradient_text {
-  background: linear-gradient(90deg, rgba(104, 57, 239, 1) 0%, rgba(181, 71, 219, 1) 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 112.5%;
-
-  @include media(medium) {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 112.5%;
-  }
-}
-
-.select {
-  .selector {
-    position: relative;
-    z-index: 1;
-
-    .arrow {
-      transform: rotateZ(0deg) translateY(0px);
-      transition-duration: 0.3s;
-      transition-timing-function: cubic-bezier(.59, 1.39, .37, 1.01);
-    }
-
-    .expanded {
-      transform: rotateZ(180deg) translateY(2px);
-    }
-
-    .label {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      cursor: pointer;
-      user-select: none;
-
-      span {
-        color: $color-white;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 140%;
-        letter-spacing: 0.28px;
-
-        @include media(large) {
-          color: black;
-        }
-      }
-    }
-  }
-
-  ul {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    border: 1px solid gainsboro;
-    position: absolute;
-    z-index: 1;
-    background: $color-white;
-  }
-
-  li {
-    padding: 5px;
-    color: #666;
-    cursor: pointer;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: 0.28px;
-  }
-
-  .current {
-    background: linear-gradient(to right, #4B1462, #6B3DFF);
-    color: $color-white;
-  }
-
-  .hidden {
-    visibility: hidden;
-  }
-
-  .visible {
-    visibility: visible;
-  }
-}
-
 // Home
 .home {
   position: relative;
@@ -477,7 +355,7 @@
     position: relative;
   }
 
-  &_bg {
+  &__bg {
     position: absolute;
     left: -725px;
     top: -371px;
@@ -735,78 +613,74 @@
     }
   }
 
-  .message {
-    &_btns {
-      margin-top: 40px;
-      @include flex-full-center();
+  &__btns {
+    margin-top: 40px;
+    @include flex-full-center();
+
+    @include media(medium) {
+      margin-top: 20px;
+    }
+  }
+
+  &__in {
+    @include flex-center();
+    gap: 20px;
+
+    @include media (medium) {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    p {
+      max-width: 322px;
+      color: $color-grey;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 140%;
 
       @include media(medium) {
-        margin-top: 20px;
+        max-width: 100%;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 140%;
       }
     }
 
-    &_in {
-      @include flex-center();
-      gap: 20px;
+  }
 
-      @include media (medium) {
-        flex-direction: column;
-        align-items: start;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__center,
+  &__left,
+  &__right {
+    flex: 1;
+  }
+
+  &__center {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &_item {
+      @include flex-start();
+      gap: 17px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 130%;
+
+      @include media(medium) {
+        font-size: 12px;
       }
-
-      .message {
-        &_left {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-        }
-
-        &_center,
-        &_left,
-        &_right {
-          flex: 1;
-        }
-
-        &_center {
-          img {
-            width: 100%;
-          }
-        }
-
-        &_right {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-
-          &_item {
-            @include flex-start();
-            gap: 17px;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 130%;
-
-            @include media(medium) {
-              font-size: 12px;
-            }
-          }
-        }
-      }
-
-      p {
-        max-width: 322px;
-        color: $color-grey;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 140%;
-
-        @include media(medium) {
-          max-width: 100%;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 140%;
-        }
-      }
-
     }
   }
 }
@@ -821,7 +695,7 @@
     position: relative;
   }
 
-  &_bg {
+  &__bg {
     position: absolute;
     top: 15px;
     right: -420px;
@@ -959,7 +833,7 @@
     z-index: 2;
   }
 
-  &_bg {
+  &__bg {
     position: absolute;
     top: 148px;
     left: 0;
@@ -1019,7 +893,7 @@
     }
   }
 
-  &_imgs {
+  &__imgs {
     margin: 42px 0 31px 0;
     display: flex;
     justify-content: center;
@@ -1035,7 +909,7 @@
     }
   }
 
-  &_bottom_text {
+  &__bottom_text {
     @include flex-center();
     border-radius: 30px;
     padding: 25px 30px 33px;
@@ -1061,12 +935,6 @@
       }
     }
 
-    .products_bottom_right {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
     p {
       margin-left: 186px;
       color: $color-white;
@@ -1081,6 +949,12 @@
         font-size: 12px;
       }
     }
+  }
+
+  &__bottom_right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }
 
@@ -1099,7 +973,7 @@
       margin-bottom: 16px;
     }
 
-    &_bg {
+    &__bg {
       position: absolute;
       right: -400px;
       top: -65px;
@@ -1226,7 +1100,7 @@
   position: relative;
   overflow: hidden;
 
-  &_bg {
+  &__bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -1240,7 +1114,7 @@
     filter: blur(92.69999694824219px);
   }
 
-  &_title {
+  &__title {
     position: relative;
     z-index: 2;
 
@@ -1427,7 +1301,7 @@
     }
   }
 
-  &_img_bg {
+  &__img_bg {
     position: relative;
     width: 349px;
     height: 190px;

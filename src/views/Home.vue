@@ -57,7 +57,7 @@
     <!-- Screener -->
     <div class="home-screener">
       <div class="main_container">
-        <img src="@/assets/images/screener_bg.png" alt="" class="home-screener_bg">
+        <img src="@/assets/images/screener_bg.png" alt="" class="home-screener__bg">
         <div class="left_block">
           <h2>{{ $t('home-screener_title') }}</h2>
           <div class="description">{{ $t('home-screener_description') }}</div>
@@ -122,21 +122,21 @@
     <section class="home-message">
       <div class="main_container">
         <h4 class="gradient_text">{{ $t('home-message_title') }}</h4>
-        <div class="message_in">
-          <div class="message_left">
+        <div class="home-message__in">
+          <div class="home-message__left">
             <p v-for="(item, i) in $t('home-message_left_description')" :key="i">{{ item }}</p>
           </div>
-          <div class="message_center">
+          <div class="home-message__center">
             <img src="@/assets/images/messenger_img.png" width="373" alt="">
           </div>
-          <ul class="message_right">
-            <li class="message_right_item" v-for="(item, i) in $t('home-message_right_description')" :key="i">
+          <ul class="home-message__right">
+            <li class="home-message__right_item" v-for="(item, i) in $t('home-message_right_description')" :key="i">
               <img src="@/assets/images/icons/check_messange.svg" alt="">
               {{ item }}
             </li>
           </ul>
         </div>
-        <div class="message_btns">
+        <div class="home-message__btns">
           <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('start using') }}</a>
         </div>
       </div>
@@ -146,7 +146,7 @@
     <!-- Message history -->
     <section class="home-history">
       <div class="main_container">
-        <img src="@/assets/images/history_bg.png" alt="" class="home-history_bg">
+        <img src="@/assets/images/history_bg.png" alt="" class="home-history__bg">
         <div class="left_block">
           <h2 class="gradient_text">{{ $t('home-history_title') }}</h2>
           <p>{{ $t('home-history_description') }}</p>
@@ -168,17 +168,17 @@
 
     <!-- products -->
     <section class="home-products">
-      <div class="home-products_bg"></div>
+      <div class="home-products__bg"></div>
       <div class="main_container">
         <h3 class="gradient_text">{{ $t('home-product_title') }}</h3>
         <p v-for="(item, i) in $t('home-product_top_description_list')" :key="i">{{ item }}</p>
         <h6>{{ $t('home-product_description') }}</h6>
-        <div class="home-products_imgs">
+        <div class="home-products__imgs">
           <img src="@/assets/images/products_img.png" width="678" alt="">
         </div>
-        <div class="home-products_bottom_text">
+        <div class="home-products__bottom_text">
           <img src="@/assets/images/products_mini_img.png" width="155" alt="">
-          <div class="products_bottom_right">
+          <div class="home-products__bottom_right">
             <p v-for="(item, i) in $t('home-product_bottom_description_list')" :key="i">{{ item }}</p>
           </div>
         </div>
@@ -189,7 +189,7 @@
     <!-- works -->
     <section class="home-works">
       <div class="main_container top_card">
-        <img src="@/assets/images/work_bg.png" alt="" class="top_card_bg">
+        <img src="@/assets/images/work_bg.png" alt="" class="top_card__bg">
         <div class="left_block">
           <h2 class="gradient_text">{{ $t('home-work_title') }}</h2>
           <p v-html="$t('home-work_description')"></p>
@@ -210,9 +210,9 @@
 
     <!-- tarif -->
     <section class="home-tarif">
-      <div class="home-tarif_bg"></div>
+      <div class="home-tarif__bg"></div>
       <div class="main_container">
-        <div class="home-tarif_title">
+        <div class="home-tarif__title">
           <h3>{{ $t('home-tarif_title') }}</h3>
         </div>
         <div class="slider_wrap">
@@ -263,7 +263,7 @@
           <p v-html="$t('hom-program_description_2')"></p>
         </div>
         <div class="program_right">
-          <div class="home-program_img_bg">
+          <div class="home-program__img_bg">
             <img src="@/assets/images/program_img.png" alt="">
           </div>
         </div>

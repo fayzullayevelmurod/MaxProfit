@@ -1,13 +1,13 @@
 <template>
     <div>
-        <header>
+        <header class="header">
             <div class="main_container">
-                <router-link to="#" class="logo">
+                <router-link to="#" class="header__logo">
                     <img src="@/assets/images/header_logo.svg" alt="">
                 </router-link>
-                <div class="navs">
-                    <div class="auth_link">
-                        <a href="https://panel.maxprofit.cc/auth/register" aria-label="" class="register_link">{{ $t('sign up') }}</a>
+                <div class="header__navs">
+                    <div class="header__auth_link">
+                        <a href="https://panel.maxprofit.cc/auth/register" aria-label="" class="header__register_link">{{ $t('sign up') }}</a>
                         <btn-light to="https://panel.maxprofit.cc/auth/register">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path
@@ -17,32 +17,32 @@
                             <span>{{ $t('sign in') }}</span>
                         </btn-light>
                     </div>
-                    <ul class="navs_links">
+                    <ul class="header__navs_links">
                         <li v-for="(item, i) in $t('navs')" :key="i">
                             <router-link to="#">{{ item }}</router-link>
                         </li>
                     </ul>
-                    <div class="select" :data-value="value" :data-list="list">
-                        <div class="selector" @click="toggle()">
-                            <div class="label">
+                    <div class="header__lang" :data-value="value" :data-list="list">
+                        <div class="header__lang_container" @click="toggle()">
+                            <div class="lang_selected">
                                 <img :src="`https://flagsapi.com/${value.flag}/flat/64.png`" width="18" alt="">
-                                <span>{{ value.name }}</span>
-                                <div class="arrow" :class="{ expanded: visible }">
+                                <span class="lang_selected__value">{{ value.name }}</span>
+                                <div class="lang_selected__arrow" :class="{ lang_selected__arrow_active: visible }">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                         <path d="M16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z" fill="#DC78FF" />
                                     </svg>
                                 </div>
                             </div>
-                            <div :class="{ hidden: !visible, visible }">
-                                <ul>
-                                    <li :class="{ current: item.name === value.name }" v-for="(item, i) in list" :key="i"
+                            <div :class="{ header__lang__list_hidden: !visible, visible }">
+                                <ul class="header__lang__list">
+                                    <li class="header__lang__list_item" :class="{ header__lang__list_item_current: item.name === value.name }" v-for="(item, i) in list" :key="i"
                                         @click="select(item)">{{ item.name }}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
     
-                    <button class="bars" @click="mobileMenuToggle()">
+                    <button class="header__bars" @click="mobileMenuToggle()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M3.75 5.41669H16.25M3.75 10H16.25M3.75 14.5834H16.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -96,8 +96,6 @@ export default {
         },
         async getFlag(countr) {
             let img = await axios.get('https://www.countryflagicons.com/FLAT/64/DE.png')
-            console.log(img);
-            return "salom"
         },
         mobileMenuToggle () {
             if (this.mobile_menu == 'mobile_menu_active') {

@@ -1,1 +1,50 @@
 // some global styles applied for all the site
+.main {
+    &_container {
+        max-width: 1078px;
+        padding: 0 20px;
+        margin: 0 auto;
+
+        @include media(medium) {
+            // some styles here
+        }
+    }
+
+    &_title {
+        color: $color-white;
+        font-family: $font-raleway;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 112.5%;
+    }
+
+    &_btn {
+        color: $color-white;
+        font-family: $font-raleway;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: 0.32px;
+        border-radius: 90px;
+        padding: 15px 25px;
+        background: linear-gradient(90deg, #6839EF 0%, $color-indigo 109.09%), linear-gradient(115deg, #F76460 22.3%, #FFB308 96.05%), #2D6BF6;
+    }
+}
+
+
+.gradient_text {
+    background: linear-gradient(90deg, rgba(104, 57, 239, 1) 0%, rgba(181, 71, 219, 1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 112.5%;
+
+    @include media(medium) {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 112.5%;
+    }
+}
