@@ -5,8 +5,8 @@
       <div class="main_container">
         <img src="@/assets/images/home_bg.png" alt="" class="home_bg">
         <h1>{{ $t('home-main_title') }}</h1>
-        <div class="media_deskription">{{ $t('home-main_descriptions')[0] }}</div>
-        <img src="@/assets/images/home_card.png" height="450" class="card" alt="">
+        <div class="home_description_md">{{ $t('home-main_descriptions')[0] }}</div>
+        <img src="@/assets/images/home_card.png" height="450" class="home_bg_phone" alt="">
         <ul class="home_list">
           <li class="home_list__item">
             <img src="@/assets/images/icons/check_messange.svg" alt="">
@@ -25,18 +25,18 @@
     <!-- Scanner -->
     <section class="home-scanner">
       <div class="main_container">
-        <img src="@/assets/images/iPhone14.png" alt="" class="iphone mobile">
+        <img src="@/assets/images/iPhone14.png" alt="" class="home-scanner__phone_md">
         <div class="left_block">
-          <img src="@/assets/images/iPhone14.png" alt="" class="iphone">
+          <img src="@/assets/images/iPhone14.png" alt="" class="home-scanner__phone">
           <ul class="left_block__list">
             <li class="left_block__list_item" v-for="(item, i) in $t('home-scanner_left_block_texts')" :key="i">
               <img :src="require(`@/assets/images/icons/scanner_${i + 1}.svg`)" alt="">
               <span>{{ item }}</span>
             </li>
           </ul>
-          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn mobile">{{ $t('start using') }}</a>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn main_btn__md">{{ $t('start using') }}</a>
         </div>
-        <div class="statistic">
+        <div class="home-scanner__statistic">
           <img src="@/assets/images/statistic.png" alt="">
           <span>{{ $t('home-statistic_text') }}</span>
         </div>
@@ -44,11 +44,11 @@
           <h2 class="gradient_text">{{ $t('home-scanner_title') }}</h2>
           <ul class="right_block__list">
             <li class="right_block__list_item" v-for="(item, i) in $t('home-scanner_right_block_texts')" :key="i">
-              <div class="number gradient_text">{{ '0' + (i + 1) }}</div>
-              <div class="text">{{ item }}</div>
+              <div class="right_block__list_item__number gradient_text">{{ '0' + (i + 1) }}</div>
+              <div class="right_block__list_item__text">{{ item }}</div>
             </li>
           </ul>
-          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn desktop">{{ $t('start using') }}</a>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn main_btn__lg">{{ $t('start using') }}</a>
         </div>
       </div>
     </section>
@@ -60,8 +60,8 @@
         <img src="@/assets/images/screener_bg.png" alt="" class="home-screener__bg">
         <div class="left_block">
           <h2>{{ $t('home-screener_title') }}</h2>
-          <div class="description">{{ $t('home-screener_description') }}</div>
-          <img src="@/assets/images/screener_card.png" width="431" class="img_card" alt="">
+          <div class="left_block__description">{{ $t('home-screener_description') }}</div>
+          <img src="@/assets/images/screener_card.png" width="431" class="left_block__img_card" alt="">
         </div>
         <div class="right_block">
           <ul class="right_block__list">
@@ -70,8 +70,8 @@
               <span>{{ item }}</span>
             </li>
           </ul>
-          <div class="description">
-            <p class="description_text">{{ $t('home-screener_description_2') }}</p>
+          <div class="right_block__description">
+            <p class="right_block__description_text">{{ $t('home-screener_description_2') }}</p>
           </div>
         </div>
       </div>
@@ -100,7 +100,7 @@
                         {{ description }}
                       </li>
                     </ul>
-                    <img class="wallets_img" :src="require(`@/assets/images/wallets${i+1}.png`)" alt="">
+                    <img class="home-wallets__card_image" :src="require(`@/assets/images/wallets${i+1}.png`)" alt="">
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@
           </button>
         </div>
         
-        <div class="link_wrap">
+        <div class="home-wallets__link_wrap">
           <a href="https://panel.maxprofit.cc/auth/register" class="main_btn">{{ $t('start using') }}</a>
         </div>
       </div>
@@ -188,19 +188,19 @@
 
     <!-- works -->
     <section class="home-works">
-      <div class="main_container top_card">
-        <img src="@/assets/images/work_bg.png" alt="" class="top_card__bg">
+      <div class="main_container home-works__top_card">
+        <img src="@/assets/images/work_bg.png" alt="" class="home-works__top_card__bg">
         <div class="left_block">
           <h2 class="gradient_text">{{ $t('home-work_title') }}</h2>
           <p v-html="$t('home-work_description')"></p>
         </div>
         <img src="@/assets/images/work_iphone.png" class="right_block" alt="">
       </div>
-      <div class="main_container bottom_card">
+      <div class="main_container home-works__bottom_card">
         <h3 class="gradient_text" v-html="$t('home-work_title_2')"></h3>
-        <div class="bottom_card__block">
-          <img src="@/assets/images/work_bottom_card.png" alt="" class="bottom_card__block_left">
-          <div class="bottom_card__block_right">
+        <div class="home-works__bottom_card__block">
+          <img src="@/assets/images/work_bottom_card.png" alt="" class="home-works__bottom_card__block_left">
+          <div class="home-works__bottom_card__block_right">
             <p v-for="(item, i) in $t('home-work_description_2')" :key="i">{{ item }}</p>
           </div>
         </div>
