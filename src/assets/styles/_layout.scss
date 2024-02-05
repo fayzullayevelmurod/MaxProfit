@@ -205,14 +205,14 @@
         background: $color-white;
         padding: 40px 20px;
 
-        .head {
+        &__head {
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
         }
 
-        .logo {
+        &__logo {
             img {
                 height: 35px;
             }

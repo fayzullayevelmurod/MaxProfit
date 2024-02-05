@@ -53,8 +53,8 @@
         <div class="mobile_menu" :class="mobile_menu">
             <div class="mobile_menu__bg"></div>
             <div class="mobile_menu__content">
-                <div class="head">
-                    <router-link to="#" class="logo">
+                <div class="mobile_menu__content__head">
+                    <router-link to="#" class="mobile_menu__content__logo">
                         <img src="@/assets/images/header_logo.svg" alt="">
                     </router-link>
                     <button class="mobile_menu__close" @click="mobileMenuToggle()">
