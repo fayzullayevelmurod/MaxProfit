@@ -167,8 +167,7 @@
             <img src="@/assets/images/history_right_card.png" width="300" alt="">
             <p>{{ $t('home-history_description_2') }}</p>
           </div>
-          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn home-history__left_block__btn">{{ $t('start
-                      using') }}</a>
+          <a href="https://panel.maxprofit.cc/auth/register" class="main_btn home-history__left_block__btn">{{ $t('start using') }}</a>
         </div>
       </div>
     </section>
@@ -308,6 +307,7 @@ export default {
   mounted() {
     this.wallet_slider = new Swiper('.home-wallets .swiper', {
       speed: 1000,
+      spaceBetween: 20,
     });
     this.tarif_slider = new Swiper('.home-tarif .swiper', {
       slidesPerView: 1,

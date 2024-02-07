@@ -38,5 +38,9 @@ export default {
             padding-top: 0;
             padding-bottom: 0;
         }
+
+        @include media (exexsm) {
+            padding: 0px 15px 0 10px;
+        }
     }
 </style>
