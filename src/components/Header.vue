@@ -18,7 +18,7 @@
                         </btn-light>
                     </div>
                     <ul class="header__navs_links">
-                        <li v-for="(item, i) in $t('navs')" :key="i">
+                        <li v-for="(item, i) in $t('header')['navs']" :key="i">
                             <router-link to="#">{{ item }}</router-link>
                         </li>
                     </ul>
@@ -62,7 +62,7 @@
                     </button>
                 </div>
                 <ul>
-                    <li v-for="(item, i) in $t('navs')" :key="i">
+                    <li v-for="(item, i) in $t('header')['navs']" :key="i">
                         <router-link to="#" class="link">{{ item }}</router-link>
                     </li>
                 </ul>

@@ -66,7 +66,7 @@
         <div class="home-screener__left_block">
           <h2>{{ $t('home')['screener']['title'] }}</h2>
           <div class="home-screener__left_block__description">{{ $t('home')['screener']['description'] }}</div>
-          <img src="@/assets/images/screener_card.png" width="431" class="home-screener__left_block__img_card" alt="">
+          <img :src="require(`@/assets/images/screener_card_${$i18n.locale}.png`)" width="431" class="home-screener__left_block__img_card" alt="">
         </div>
         <div class="home-screener__right_block">
           <ul class="home-screener__right_block__list">
@@ -107,7 +107,7 @@
                         {{ description }}
                       </li>
                     </ul>
-                    <img class="home-wallets__card_image" :src="require(`@/assets/images/wallets${i + 1}.png`)" alt="">
+                    <img class="home-wallets__card_image" :src="require(`@/assets/images/wallets${i + 1}_${$i18n.locale}.png`)" alt="">
                   </div>
                 </div>
               </div>

@@ -2,13 +2,15 @@
     "sign up": "Sing up",
     "sign in": "Log in",
     "start using": "Начать пользоваться",
-    "navs": [
-        "Scanner",
-        "Screener",
-        "Message Live",
-        "Message History",
-        "Партнерам"
-    ],
+    "header": {
+        "navs": [
+            "Scanner",
+            "Screener",
+            "Message Live",
+            "Message History",
+            "Партнерам"
+        ]
+    },
     "home": {
         "main": {
             "title": "Экосистема для заработка на криптовалютах",
