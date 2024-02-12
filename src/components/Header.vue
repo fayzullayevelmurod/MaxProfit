@@ -79,10 +79,10 @@ export default {
     data() {
         return {
             list: [
-                {name: "Eng", flag: 'GB'},
-                {name: "Ru", flag: 'RU'}
+                {name: "Eng", flag: 'GB', locale: 'en'},
+                {name: "Ru", flag: 'RU', locale: 'ru'}
             ],
-            value: {name: "Eng", flag: 'GB'},
+            value: {name: "Ru", flag: 'RU', locale: 'ru'},
             visible: false,
             mobile_menu: ''
         }
@@ -92,6 +92,7 @@ export default {
             this.visible = !this.visible;
         },
         select(option) {
+            this.$i18n.locale = option.locale;
             this.value = option;
         },
         async getFlag(countr) {
